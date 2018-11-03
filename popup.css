@@ -4,6 +4,7 @@ Fonts are:
   Merriweather and Open Sans */
 
 	body{
+		text-align: center;
         font-family: 'Merriweather', serif;
         height: 340px;
         width: 240px;
@@ -13,6 +14,11 @@ Fonts are:
 
       .title{
         font-size: 18pt;
+      }
+
+      .subtitle{
+      	text-align: left;
+        font-size: 16pt;
       }
 
       form{
@@ -41,3 +47,19 @@ Fonts are:
         height: 40px;
         margin-top: 30px;
       }
+
+      .button {		
+      	text-align: middle;
+      	vertical-align: middle;
+      	font-family: 'Open Sans', sans-serif;
+        border: black 1px solid;
+        border-radius: 5px;
+        font-size: 20px;
+        width: 200px;
+        height: 40px;
+      }
+      span {
+  		display: inline-block;
+  		vertical-align: middle;
+  		line-height: normal;
+	}
