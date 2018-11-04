@@ -18,11 +18,35 @@ Fonts are:
         width: 240px;
         /* border: 1px red solid; */
         padding: 30px;
+				text-align: left;
       }
 
+	a{
+		color: black;
+		font-size: 12pt;
+	}
+
+	#cancel{
+		margin-bottom: 10px;
+	}
+
       .title{
-        font-size: 18pt;
+        font-size: 19pt;
+				/* border: 1px red solid; */
+				margin-top: 30px;
       }
+
+			#welcomeGuppy{
+				position: absolute;
+				/* background-image: url('Guppy.png'); */
+				height: 200px;
+				z-index: -1;
+				-webkit-transform: scaleX(-1);
+    		transform: scaleX(-1);
+				top: -55px;
+				left: -60px;
+
+			}
 
       .subtitle{
       	text-align: left;
@@ -38,7 +62,7 @@ Fonts are:
         font-family: 'Open Sans', sans-serif;
         font-size: 12pt;
         color: grey;
-        width: 180px;
+        width: 190px;
         height: 40px;
         border-radius: 5px;
         border: 1px grey solid;
@@ -59,14 +83,25 @@ Fonts are:
       }
 
       .submit{
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Merriweather', serif;
         border: black 1px solid;
         border-radius: 5px;
-        font-size: 14px;
-        width: 190px;
+        font-size: 16px;
+        width: 200px;
         height: 40px;
         margin-top: 10px;
       }
+
+			.submit:hover{
+				color: white;
+				background-color: black;
+				transition: 0.3s;
+			}
+
+			.switchIntro{
+				font-family: 'Merriweather', serif;
+				font-size: 11pt;
+			}
 
       .button {
       	text-align: middle;
@@ -82,4 +117,32 @@ Fonts are:
   		display: inline-block;
   		vertical-align: middle;
   		line-height: normal;
-	}
+				}
+
+			#joinGuppy{
+				position: absolute;
+				/* background-image: url('Guppy.png'); */
+				height: 150px;
+				z-index: -1;
+				top: -10px;
+				right: -30px;
+
+			}
+
+			.inGuppy{
+				position: absolute;
+				-webkit-transform: scaleX(-1);
+    		transform: scaleX(-1);
+				/* background-image: url('Guppy.png'); */
+				height: 130px;
+				z-index: -1;
+				top: -20px;
+				left: -40px;
+
+			}
+
+			.groupBox{
+				margin-top: 20px;
+
+
+			}

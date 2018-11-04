@@ -1,4 +1,4 @@
-const client = stitch.Stitch.initializeDefaultAppClient('bookmarks-hlhev');
+// const client = stitch.Stitch.initializeDefaultAppClient('bookmarks-hlhev');
 
 document.getElementById("submitLogin").addEventListener("click", function(event){
   //event.preventDefault();
@@ -9,7 +9,7 @@ document.getElementById("submitLogin").addEventListener("click", function(event)
   let password = document.getElementById("passwordIn").value;
   localStorage.setItem("username", username);
   // console.log (username, password);
-  const credential = new stitch.UserPasswordCredential(username, password);
+  // const credential = new stitch.UserPasswordCredential(username, password);
 
   /*client.auth.loginWithCredential(credential).then(authedId => {
      console.log(`successfully logged in with id: ${authedId}`)

@@ -9,17 +9,19 @@
     <title></title>
     <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="popup.css">
-    <script src="https://s3.amazonaws.com/stitch-sdks/js/bundles/4.0.8/stitch.js"></script>
+    <!-- <script src="https://s3.amazonaws.com/stitch-sdks/js/bundles/4.0.8/stitch.js"></script> -->
   </head>
   <body>
-    <div class="title" >Welcome to<br /> Guppy</div>
-
+    <image id="welcomeGuppy" src="Guppy.png">
+    <div class="title" >Welcome to Guppy</div><br />
+    <div class="title"></div>
     <form class="login" action="teams.html">
       <input id= "usernameIn" class="textIn" type="text" placeholder="Username" name="username"/><br />
       <input id= "passwordIn" class="textIn" type="password" placeholder="Password" name="password" /> <br />
       <input id="submitLogin" class="submit" type="submit" value="Login"/>
     </form>
-    <br>Don't have an account? <a href="register.html">Sign up!</a>
+    <span class="switchIntro"><br>Don't have an account? <br /><a href="register.html">Sign up!</a></span>
+    </div>
     <script src="popup.js">
     </script>
   </body>

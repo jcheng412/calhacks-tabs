@@ -3,43 +3,51 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="popup.css">
-    <script src="https://s3.amazonaws.com/stitch-sdks/js/bundles/4.0.8/stitch.js"></script>
+    <!-- <script src="https://s3.amazonaws.com/stitch-sdks/js/bundles/4.0.8/stitch.js"></script> -->
   </head>
   <body>
-    <div class="title" >Create an Account</div>
-
+    <image id="joinGuppy" src="Guppy.png">
+    <div class="title" >Join Guppy</div>
     <form class="login", action="teams.html">
       <input id= "usernameSignUp" class="textIn" type="text" placeholder="Username" name="username"/><br />
       <input id= "passwordSignUp" class="textIn" type="password" placeholder="Password" name="password" /> <br />
       <!-- <input class= "teamName" type="text" placeholder="Team Name" name="username"/><br /> -->
-      <input id="submitSignUp" class="submit" type="submit" value="Login" />
+      <input id="submitSignUp" class="submit" type="submit" value="Create Account" />
     </form>
-    <br>Have an account? <a href="popup.html">Sign in!</a>
-
-    <script>
-      // const client = stitch.Stitch.initializeDefaultAppClient('bookmarks-hlhev');
-      // const emailPassClient = stitch.Stitch.defaultAppClient.auth
-      //                         .getProviderClient(UserPasswordAuthProviderClient.factory);
-      //
-      // document.getElementById("submitLogin").addEventListener("click", function(event){
-      //   event.preventDefault();
-      //   console.log("Start Login validation");
-      //
-      //   //make a credential variable that has the inputed user
-      //   let username = document.getElementById("usernameIn").value;
-      //   let password = document.getElementById("passwordIn").value;
-      //   // console.log (username, password);
-      //   const credential = new stitch.UserPasswordCredential(username, password);
-      //
-      //   client.auth.loginWithCredential(credential).then(authedId => {
-      //      console.log(`successfully logged in with id: ${authedId}`)
-      //      //route to the home page
-      //      console.log("login sucess!!");
-      //   }).catch(err => console.error(`login failed with error: ${err}`))
-      // });
-
-    </script>
+    <span class="switchIntro">
+      <br>Have an account? <br />
+      <a href="popup.html">Sign in!</a>
+    </span>
   </body>
 </html>
+
+
+
+
+
+
+<!-- <script>
+  // const client = stitch.Stitch.initializeDefaultAppClient('bookmarks-hlhev');
+  // const emailPassClient = stitch.Stitch.defaultAppClient.auth
+  //                         .getProviderClient(UserPasswordAuthProviderClient.factory);
+  //
+  // document.getElementById("submitLogin").addEventListener("click", function(event){
+  //   event.preventDefault();
+  //   console.log("Start Login validation");
+  //
+  //   //make a credential variable that has the inputed user
+  //   let username = document.getElementById("usernameIn").value;
+  //   let password = document.getElementById("passwordIn").value;
+  //   // console.log (username, password);
+  //   const credential = new stitch.UserPasswordCredential(username, password);
+  //
+  //   client.auth.loginWithCredential(credential).then(authedId => {
+  //      console.log(`successfully logged in with id: ${authedId}`)
+  //      //route to the home page
+  //      console.log("login sucess!!");
+  //   }).catch(err => console.error(`login failed with error: ${err}`))
+  // });
+
+</script> -->

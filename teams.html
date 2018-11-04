@@ -7,10 +7,14 @@
     <link rel="stylesheet" type="text/css" href="popup.css">
   </head>
   <body>
-    <div class="title" >Guppy</div>
+    <image class="inGuppy" src="Guppy.png">
+      <br />
+    <div class="subtitle" >Guppy</div>
     <div id="user"></div>
-    <br><div class="subtitle" >Groups: &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="makegroup.html"><img src="plus.png"></a></div>
-    <div ></div>
+    <div class="title" >Groups: &emsp;&emsp;&emsp;&emsp;<a href="makegroup.html"><img src="plus.png"></a></div>
+    <div class="groupBox">
+      <button id="groupButton" class="submit" type="submit" value="CalHacks 2018"/>
+    </div>
     <!--<form class="login">
       <input class="button" type="submit" value="CalHacks 2018" />
       <div class="button"><span>This is a button</span></div>
@@ -18,6 +22,6 @@
     <br><a href="popup.html">Log out</a>
     <script type="text/javascript">
       document.getElementById("user").innerHTML = localStorage.getItem("username");
-    </script> 
+    </script>
   </body>
 </html>
