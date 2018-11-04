@@ -6,21 +6,58 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="popup.css">
   </head>
+
+  <!-- Make a new group -->
   <body>
     <div class="title" >Make New Group:</div>
     <form class="login">
-      <input class= "textIn" type="text" placeholder="Team ID" name="teamname"/><br />
-      <input class= "emailInput" type="text" placeholder="Member Emails" name="emails" />Separate emails using commas.
-      <input class="submit" type="submit" value="Make Group" />
+      <input id = "groupName" class= "textIn" type="text" placeholder="Group ID" name="groupname"/><br />
+      <input id="memberUsernames" class= "emailInput" type="text" placeholder="Member Emails" name="emails" />Separate emails using commas.
+      <input id="makeGroup" class="submit" type="submit" value="Make Group" />
     </form>
 
+    <!-- Adding new group to MongoDB -->
+    <script>
+      document.getElementById("makeGroup").addEventListener("click", function(event){
+        event.preventDefault();
+      console.log("Start Group Creation");
+
+
+    var MongoClient = require('mongodb').MongoClient;
+
+    var uri = "mongodb+srv://kirsten:<Calhacks2018!>@cluster0-vydx9.mongodb.net/test?retryWrites=true";
+    MongoClient.connect(uri, function(err, client) {
+      const collection = client.db("groups").collection("people");
+      // perform actions on the collection object
+      collection.insertOne({"group": document.getElementById("groupName"), "members": document.getElementbyId("memberUsernames")});
+      // collection.find({"name": "Naomi"})
+      client.close();
+    });
+  });
+    </script>
+
+    <!-- Add group -->
     <br></br>
     <div class="title" >Add Group:</div>
     <form class="login">
-      <input class= "emailInput" type="text" placeholder="Team ID" name="teamname"/><br />
-      <input class="submit" type="submit" value="Add Group" />
+      <input id="teamName" class= "emailInput" type="text" placeholder="Team ID" name="teamname"/><br />
+      <input id="addGroup" class="submit" type="submit" value="Add Group" />
     </form>
 
     <a href="teams.html">Cancel</a>
   </body>
 </html>
+
+
+
+
+    //  var MongoClient = require('mongodb').MongoClient;
+
+      //var uri = "mongodb+srv://kirsten:<Calhacks2018!>@cluster0-vydx9.mongodb.net/test?retryWrites=true";
+      //MongoClient.connect(uri, function(err, client) {
+        // const collection = client.db("test").collection("devices");
+         //collection.insertOne({"group": document.getElementById("groupName"), "members": email})
+         // perform actions on the collection object
+
+    //  client.close();
+  //  )}
