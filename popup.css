@@ -2,10 +2,18 @@
 Link to Import Fonts
 Fonts are:
   Merriweather and Open Sans */
+	@font-face{
+		font-family: 'Merriweather';
+		src: url('/Merriweather/Merriweather-Regular.ttf') format('truetype');
+	}
+	@font-face{
+		font-family: 'Open Sans';
+		src: url('/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+	}
 
 	body{
 		text-align: center;
-        font-family: /*'Merriweather',*/ serif;
+        font-family: 'Merriweather', serif;
         height: 340px;
         width: 240px;
         /* border: 1px red solid; */
@@ -27,7 +35,7 @@ Fonts are:
       }
 
       .textIn{
-        font-family: /*'Open Sans',*/ sans-serif;
+        font-family: 'Open Sans', sans-serif;
         font-size: 12pt;
         color: grey;
         width: 180px;
@@ -39,7 +47,7 @@ Fonts are:
       }
 
       .emailInput{
-        font-family: /*'Open Sans',*/ sans-serif;
+        font-family: 'Open Sans', sans-serif;
         font-size: 12pt;
         color: grey;
         width: 180px;
@@ -51,7 +59,7 @@ Fonts are:
       }
 
       .submit{
-        font-family: /*'Open Sans',*/ sans-serif;
+        font-family: 'Open Sans', sans-serif;
         border: black 1px solid;
         border-radius: 5px;
         font-size: 14px;
@@ -63,7 +71,7 @@ Fonts are:
       .button {
       	text-align: middle;
       	vertical-align: middle;
-      	font-family: /*'Open Sans',*/ sans-serif;
+      	font-family: 'Open Sans', sans-serif;
         border: black 1px solid;
         border-radius: 5px;
         font-size: 20px;
