@@ -2,6 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+
+    <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; img-src https://*; child-src 'none'; script-src *">
+
     <title></title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="popup.css">
@@ -11,16 +15,16 @@
     <div class="title" >Welcome to<br /> Guppy</div>
 
     <form class="login">
-      <input id= "usernameIn" type="text" placeholder="Username" name="username"/><br />
-      <input id= "passwordIn" type="text" placeholder="Password" name="password" /> <br />
-      <input id="submit" type="submit" value="Login"/>
+      <input id= "usernameIn" class="textIn" type="text" placeholder="Username" name="username"/><br />
+      <input id= "passwordIn" class="textIn" type="text" placeholder="Password" name="password" /> <br />
+      <input id="submitLogin" class="submit" type="submit" value="Login"/>
     </form>
     <br>Don't have an account? <a href="register.html">Sign up!</a>
 
     <script>
       const client = stitch.Stitch.initializeDefaultAppClient('bookmarks-hlhev');
 
-      document.getElementById("submit").addEventListener("click", function(event){
+      document.getElementById("submitLogin").addEventListener("click", function(event){
         event.preventDefault();
         console.log("Start Login validation");
 
