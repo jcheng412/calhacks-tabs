@@ -8,7 +8,7 @@ Fonts are:
         font-family: 'Merriweather', serif;
         height: 340px;
         width: 240px;
-        border: 1px red solid;
+        /* border: 1px red solid; */
         padding: 30px;
       }
 
