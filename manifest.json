@@ -10,9 +10,10 @@
     "persistent": false,
     "scripts": ["background_script.js"]
   },
-  "permissions": ["https://*.google.com/", "activeTab", "bookmarks"],
+  "permissions": ["https://*.google.com/", "activeTab"],
   "browser_action": {
     "default_icon": "icon.jpg",
     "default_popup": "popup.html"
-  }
+  },
+  "content_security_policy": "default-src 'self'; style-src 'self'; img-src https://*; child-src 'none'; script-src 'self' https://s3.amazonaws.com/stitch-sdks/js/bundles/4.0.8/stitch.js;"
 }
