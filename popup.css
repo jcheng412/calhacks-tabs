@@ -38,6 +38,18 @@ Fonts are:
         padding-left: 10px
       }
 
+      .emailInput{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12pt;
+        color: grey;
+        width: 180px;
+        height: 100px;
+        border-radius: 5px;
+        border: 1px grey solid;
+        margin-bottom: 10px;
+        padding-left: 10px
+      }
+
       .submit{
         font-family: 'Open Sans', sans-serif;
         border: black 1px solid;
@@ -45,7 +57,7 @@ Fonts are:
         font-size: 14px;
         width: 190px;
         height: 40px;
-        margin-top: 30px;
+        margin-top: 10px;
       }
 
       .button {		
